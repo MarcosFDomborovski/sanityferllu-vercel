@@ -1,0 +1,18 @@
+*[_type == "category_type"]{
+  category_name,
+  products[]{
+    image{
+      asset->{
+        url
+      }
+    },
+    description
+  }
+}
+
+*[_type == 'recentes']{
+  recent_products[]{
+    description,
+    image{asset->{url}}
+  }
+}
